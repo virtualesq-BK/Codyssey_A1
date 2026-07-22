@@ -7,7 +7,8 @@ from data import prompts
 from prompt_manager import (
     add_prompt,
     show_prompt_list,
-    filter_by_category
+    filter_by_category,
+    search_prompt
 )
 
 def show_menu():
@@ -45,7 +46,7 @@ def main():
             filter_by_category()
 
         elif choice == "4":
-            print("\n[검색 기능은 다음 단계에서 구현합니다.]")
+            search_prompt()
 
         elif choice == "5":
             print("\n[상세 보기 기능은 다음 단계에서 구현합니다.]")

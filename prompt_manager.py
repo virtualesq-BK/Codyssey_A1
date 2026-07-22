@@ -193,3 +193,48 @@ def filter_by_category():
         print("해당 카테고리에 등록된 프롬프트가 없습니다.")
     else:
         print(f"총 {count}개의 프롬프트가 있습니다.")
+
+def search_prompt():
+    """
+    키워드로 프롬프트 검색
+    (제목 또는 내용에서 검색)
+    """
+
+    print("\n" + "=" * 50)
+    print("              프롬프트 검색")
+    print("=" * 50)
+
+    keyword = input("검색어를 입력하세요 : ").strip()
+
+    if keyword == "":
+        print("검색어를 입력해야 합니다.")
+        return
+
+    print("\n" + "=" * 50)
+    print("검색 결과")
+    print("=" * 50)
+
+    count = 0
+
+    for index, prompt in enumerate(prompts, start=1):
+
+        if (keyword.lower() in prompt["title"].lower() or
+                keyword.lower() in prompt["content"].lower()):
+
+            star = "⭐" if prompt["favorite"] else ""
+
+            print(
+                f"{index}. "
+                f"[{prompt['category']}] "
+                f"{prompt['title']} {star}"
+            )
+
+            count += 1
+
+    print("-" * 50)
+
+    if count == 0:
+        print("검색 결과가 없습니다.")
+    else:
+        print(f"{count}개의 프롬프트를 찾았습니다.")
+
