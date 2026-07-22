@@ -238,3 +238,54 @@ def search_prompt():
     else:
         print(f"{count}개의 프롬프트를 찾았습니다.")
 
+def show_prompt_detail():
+    """
+    프롬프트 상세 보기
+    """
+
+    print("\n" + "=" * 50)
+    print("            프롬프트 상세 보기")
+    print("=" * 50)
+
+    # 프롬프트가 없는 경우
+    if len(prompts) == 0:
+        print("등록된 프롬프트가 없습니다.")
+        return
+
+    # 번호 입력
+    while True:
+
+        choice = input("프롬프트 번호를 입력하세요 : ").strip()
+
+        if not choice.isdigit():
+            print("숫자를 입력하세요.")
+            continue
+
+        choice = int(choice)
+
+        if 1 <= choice <= len(prompts):
+            break
+
+        print("올바른 번호를 입력하세요.")
+
+    prompt = prompts[choice - 1]
+
+    star = "⭐" if prompt["favorite"] else ""
+
+    print("\n" + "=" * 50)
+    print("프롬프트 상세 정보")
+    print("=" * 50)
+
+    print(f"번호       : {choice}")
+    print(f"제목       : {prompt['title']}")
+    print(f"카테고리   : {prompt['category']}")
+    print(f"즐겨찾기   : {star}")
+
+    print("-" * 50)
+
+    print("내용")
+    print("-" * 50)
+    print(prompt["content"])
+
+    print("=" * 50)
+
