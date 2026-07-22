@@ -8,5 +8,5 @@
 - Python 기초 코드 작성 (`hello.py`)
 - Git & GitHub 환경 설정
 
-$CURSOR$
+추가 수정 예정............
 ```
