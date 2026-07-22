@@ -110,3 +110,32 @@ def add_prompt():
     print("\n프롬프트가 성공적으로 추가되었습니다!")
 
     print(f"현재 등록된 프롬프트 수 : {len(prompts)}개")
+
+def show_prompt_list():
+    """
+    저장된 모든 프롬프트 목록 출력
+    """
+
+    print("\n" + "=" * 50)
+    print("              프롬프트 목록")
+    print("=" * 50)
+
+    # 프롬프트가 없는 경우
+    if len(prompts) == 0:
+        print("등록된 프롬프트가 없습니다.")
+        return
+
+    # 프롬프트 목록 출력
+    for index, prompt in enumerate(prompts, start=1):
+
+        # 즐겨찾기 여부
+        star = "⭐" if prompt["favorite"] else ""
+
+        print(
+            f"{index}. "
+            f"[{prompt['category']}] "
+            f"{prompt['title']} {star}"
+        )
+
+    print("-" * 50)
+    print(f"총 {len(prompts)}개의 프롬프트가 등록되어 있습니다.")

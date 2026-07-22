@@ -4,8 +4,7 @@
 # ==========================================
 
 from data import prompts
-from prompt_manager import add_prompt
-
+from prompt_manager import add_prompt, show_prompt_list
 
 def show_menu():
     """메인 메뉴 출력"""
@@ -36,7 +35,7 @@ def main():
             add_prompt()
 
         elif choice == "2":
-            print("\n[프롬프트 목록 기능은 다음 단계에서 구현합니다.]")
+            show_prompt_list()
 
         elif choice == "3":
             print("\n[카테고리 조회 기능은 다음 단계에서 구현합니다.]")
