@@ -1,0 +1,45 @@
+# ==========================================
+# Python 가상환경 및 캐시 파일
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 가상환경 (venv, env 등)
+venv/
+env/
+ENV/
+.venv/
+
+# ==========================================
+# 환경 변수 및 민감 정보 (API Keys, Passwords)
+# ==========================================
+.env
+.env.*
+secrets.json
+
+# ==========================================
+# IDE 및 에디터 설정 파일
+# ==========================================
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PyCharm / JetBrains
+.idea/
+
+# ==========================================
+# OS 생성 파일
+# ==========================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
