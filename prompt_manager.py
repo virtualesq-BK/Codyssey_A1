@@ -139,3 +139,57 @@ def show_prompt_list():
 
     print("-" * 50)
     print(f"총 {len(prompts)}개의 프롬프트가 등록되어 있습니다.")
+
+def filter_by_category():
+    """
+    카테고리별 프롬프트 조회
+    """
+
+    print("\n" + "=" * 50)
+    print("          카테고리별 조회")
+    print("=" * 50)
+
+    # 카테고리 출력
+    for index, category in enumerate(CATEGORIES, start=1):
+        print(f"{index}. {category}")
+
+    # 번호 입력
+    while True:
+
+        choice = input("\n카테고리를 선택하세요 : ").strip()
+
+        if not choice.isdigit():
+            print("숫자를 입력하세요.")
+            continue
+
+        choice = int(choice)
+
+        if 1 <= choice <= len(CATEGORIES):
+            break
+
+        print("올바른 번호를 입력하세요.")
+
+    selected_category = CATEGORIES[choice - 1]
+
+    print("\n" + "=" * 50)
+    print(f"[{selected_category}] 프롬프트 목록")
+    print("=" * 50)
+
+    count = 0
+
+    for index, prompt in enumerate(prompts, start=1):
+
+        if prompt["category"] == selected_category:
+
+            star = "⭐" if prompt["favorite"] else ""
+
+            print(f"{index}. {prompt['title']} {star}")
+
+            count += 1
+
+    print("-" * 50)
+
+    if count == 0:
+        print("해당 카테고리에 등록된 프롬프트가 없습니다.")
+    else:
+        print(f"총 {count}개의 프롬프트가 있습니다.")
