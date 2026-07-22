@@ -9,7 +9,9 @@ from prompt_manager import (
     show_prompt_list,
     filter_by_category,
     search_prompt,
-    show_prompt_detail
+    show_prompt_detail,
+    toggle_favorite,
+    show_favorites
 )
 
 def show_menu():
@@ -53,10 +55,10 @@ def main():
             show_prompt_detail()
 
         elif choice == "6":
-            print("\n[즐겨찾기 관리 기능은 다음 단계에서 구현합니다.]")
+            toggle_favorite()
 
         elif choice == "7":
-            print("\n[즐겨찾기 목록 기능은 다음 단계에서 구현합니다.]")
+            show_favorites()
 
         elif choice == "0":
             print("\n프로그램을 종료합니다.")

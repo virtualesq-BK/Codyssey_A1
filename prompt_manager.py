@@ -289,3 +289,87 @@ def show_prompt_detail():
 
     print("=" * 50)
 
+def toggle_favorite():
+    """
+    즐겨찾기 추가 / 해제
+    """
+
+    print("\n" + "=" * 50)
+    print("            즐겨찾기 관리")
+    print("=" * 50)
+
+    # 등록된 프롬프트가 없는 경우
+    if len(prompts) == 0:
+        print("등록된 프롬프트가 없습니다.")
+        return
+
+    # 현재 목록 출력
+    for index, prompt in enumerate(prompts, start=1):
+
+        star = "⭐" if prompt["favorite"] else ""
+
+        print(
+            f"{index}. "
+            f"[{prompt['category']}] "
+            f"{prompt['title']} {star}"
+        )
+
+    print("-" * 50)
+
+    # 번호 입력
+    while True:
+
+        choice = input("프롬프트 번호를 입력하세요 : ").strip()
+
+        if not choice.isdigit():
+            print("숫자를 입력하세요.")
+            continue
+
+        choice = int(choice)
+
+        if 1 <= choice <= len(prompts):
+            break
+
+        print("올바른 번호를 입력하세요.")
+
+    prompt = prompts[choice - 1]
+
+    # True ↔ False 변경
+    prompt["favorite"] = not prompt["favorite"]
+
+    # 결과 출력
+    if prompt["favorite"]:
+        print(f"\n'{prompt['title']}' 프롬프트를 즐겨찾기에 추가했습니다.")
+    else:
+        print(f"\n'{prompt['title']}' 프롬프트를 즐겨찾기에서 해제했습니다.")
+
+def show_favorites():
+    """
+    즐겨찾기 목록 출력
+    """
+
+    print("\n" + "=" * 50)
+    print("            즐겨찾기 목록")
+    print("=" * 50)
+
+    count = 0
+
+    for index, prompt in enumerate(prompts, start=1):
+
+        if prompt["favorite"]:
+
+            print(
+                f"{index}. "
+                f"[{prompt['category']}] "
+                f"{prompt['title']} ⭐"
+            )
+
+            count += 1
+
+    print("-" * 50)
+
+    if count == 0:
+        print("즐겨찾기에 등록된 프롬프트가 없습니다.")
+    else:
+        print(f"총 {count}개의 즐겨찾기가 있습니다.")
+
