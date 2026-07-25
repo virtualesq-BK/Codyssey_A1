@@ -31,20 +31,20 @@ Codyssey_A1
 
 ### 코드 에디터(VS Code)에서 Python 설치 확인(Hello) 스크린샷
 
-![코드 에디터(VS Code)에서 Python 설치 확인(Hello)](images\코드 에디터(VS Code)에서 Python 설치 확인(Hello).png)
+![코드 에디터(VS Code)에서 Python 설치 확인(Hello)](images/코드 에디터(VS Code)에서 Python 설치 확인(Hello).png)
 
 - Python 3.11.0
 
 ### 터미널에서 Python 버전 확인 스크린샷
 
-![터미널에서 Python 버전 확인](images\터미널에서 Python 버전 확인.png)
+![터미널에서 Python 버전 확인](images/터미널에서 Python 버전 확인.png)
 
 - Git
 - GitHub
 
 ### GitHub 계정 연결 상태 확인 (VS Code 앱 연동) 스크린샷
 
-![GitHub 계정 연결 상태 확인 (VS Code 앱 연동)](images\GitHub 계정 연결 상태 확인 (VS Code 앱 연동).png)
+![GitHub 계정 연결 상태 확인 (VS Code 앱 연동)](images/GitHub 계정 연결 상태 확인 (VS Code 앱 연동).png)
 
 
 ---
@@ -107,7 +107,7 @@ python3 main.py
 
 ### 메뉴 화면 및 프롬프트 추가 스크린샷
 
-![메뉴 화면 및 프롬프트 추가](images\메뉴 화면 및 프롬프트 추가.png)
+![메뉴 화면 및 프롬프트 추가](images/메뉴 화면 및 프롬프트 추가.png)
 
 ---
 
@@ -124,7 +124,7 @@ python3 main.py
 
 ### 프롬프트 목록 스크린샷
 
-![프롬프트 목록](images\프롬프트 목록.png)
+![프롬프트 목록](images/프롬프트 목록.png)
 
 ---
 
@@ -134,7 +134,7 @@ python3 main.py
 
 ### 카테고리별 조회 스크린샷
 
-![카테고리별 조회](images\카테고리별 조회.png)
+![카테고리별 조회](images/카테고리별 조회.png)
 
 ---
 
@@ -151,7 +151,7 @@ python3 main.py
 
 ### 프롬프트 검색 스크린샷
 
-![프롬프트 검색](images\프롬프트 검색.png)
+![프롬프트 검색](images/프롬프트 검색.png)
 
 ---
 
@@ -169,7 +169,7 @@ python3 main.py
 
 ### 프롬프트 상세 보기 스크린샷
 
-![프롬프트 상세 보기](images\프롬프트 상세 보기.png)
+![프롬프트 상세 보기](images/프롬프트 상세 보기.png)
 
 ---
 
@@ -185,7 +185,7 @@ python3 main.py
 
 ### 즐겨찾기 추가 스크린샷
 
-![즐겨찾기 추가](images\즐겨찾기 추가.png)
+![즐겨찾기 추가](images/즐겨찾기 추가.png)
 
 ---
 
@@ -196,7 +196,7 @@ python3 main.py
 
 ### 즐겨찾기 보기(목록) 스크린샷
 
-![즐겨찾기 보기(목록)](images\즐겨찾기 보기(목록).png)
+![즐겨찾기 보기(목록)](images/즐겨찾기 보기(목록).png)
 
 ---
 
@@ -263,12 +263,12 @@ python3 main.py
 
 ### 프롬프트 목록(브랜치 활용) 구현 스크린샷
 
-![프롬프트 목록(브랜치 활용) 구현](images\프롬프트 목록(브랜치 활용) 구현.png)
+![프롬프트 목록(브랜치 활용) 구현](images/프롬프트 목록(브랜치 활용) 구현.png)
 
 
 ### main 브랜치로 병합 스크린샷
 
-![main 브랜치로 병합](images\main 브랜치로 병합.png)
+![main 브랜치로 병합](images/main 브랜치로 병합.png)
 
 
 ---
