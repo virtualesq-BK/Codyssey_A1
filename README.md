@@ -31,7 +31,8 @@ Codyssey_A1
 
 ### 코드 에디터(VS Code)에서 Python 설치 확인(Hello) 스크린샷
 
-![코드 에디터(VS Code)에서 Python 설치 확인(Hello)](images/코드 에디터(VS Code)에서 Python 설치 확인(Hello).png)
+![코드 에디터(VS Code)에서 Python 설치 확인(Hello)](images/코드%20에디터%28VS%20Code%29에서%20Python%20설치%20확인%28Hello%29.png)
+![코드 에디터(VS Code)에서 Python 설치 확인(Hello)](images/코드%20에디터(VS%20Code)에서%20Python%20설치%20확인(Hello).png)
 
 - Python 3.11.0
 
